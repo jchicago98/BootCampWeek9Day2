@@ -1,0 +1,43 @@
+package week8day2; 
+
+  
+
+import java.util.Scanner; 
+
+  
+
+public class Week8day2 { 
+
+  
+
+    public static void main(String[] args) { 
+
+        Scanner t = new Scanner(System.in); 
+
+        double h; 
+
+        double b; 
+
+        System.out.println("AREA OF TRIANGLE APP"); 
+
+        System.out.println("==============================\n"); 
+
+        System.out.print("ENTER THE TRIANGLE HEIGHT ==>"); 
+
+        h = t.nextDouble(); 
+
+        System.out.print("ENTER THE TRIANGLE BASE ==>"); 
+
+        b = t.nextDouble(); 
+
+        Triangle tr=new Triangle(h,b); 
+
+        tr.CalcArea(); 
+
+        System.out.println("THE AREA OF THE TRIANGLE" +tr.getArea()); 
+
+    } 
+
+  
+
+} 
